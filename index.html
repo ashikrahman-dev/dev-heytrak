@@ -4,15 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
     <title>Home</title>
 
+    <!-- Tailwind css output file -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Google fonts End -->
 </head>
 
 <body>
 
+    <!-- Header menubar  -->
+    <header class="header py-[17px] border-b border-[#E8E8E8]">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="w-full md:w-2/3">
+                    <div class="flex gap-7 items-center">
+                        <!-- Logo  -->
+                        <div class="logo-wrap">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt="logo" class="max-w-full">
+                            </a>
+                        </div>
+                        <!-- Logo  -->
+                        <!-- Menu -->
+                        <nav class="flex gap-5">
+                            <a href="#"
+                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                Why Heytrak
+                            </a>
+                            <a href="#"
+                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                Solutions
+                            </a>
+                            <a href="#"
+                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                Pricing
+                            </a>
+                            <a href="#"
+                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                About us
+                            </a>
+                            <a href="#"
+                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                Support
+                            </a>
+                        </nav>
+                        <!-- Menu -->
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <div class="flex gap-5 justify-end">
+                        <!-- sign in button  -->
+                        <a href="#"
+                            class="font-[15px] text-light-dark leading-[1.6em] flex gap-2 items-center hover:text-blue transition-all duration-150 group">
+                            <span>
+                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.5 6.41C8.15685 6.41 9.5 5.06685 9.5 3.41C9.5 1.75315 8.15685 0.410004 6.5 0.410004C4.84315 0.410004 3.5 1.75315 3.5 3.41C3.5 5.06685 4.84315 6.41 6.5 6.41ZM6.5 7.41C3.18629 7.41 0.5 10.0963 0.5 13.41H12.5C12.5 10.0963 9.81371 7.41 6.5 7.41Z"
+                                        fill="#35324A"
+                                        class="group-hover:fill-blue group-hover:transition-all group-hover:duration-150" />
+                                </svg>
+                            </span>
+                            Sign In
+                        </a>
+                        <!-- sign in button  -->
+                        <!-- Primary button  -->
+                        <a href="#"
+                            class="primary-button py-[9px] px-6 rounded-[4px] bg-blue text-white text-[15px] leading-[1.6em] border-[2px] border-dark-blue shadow-btn-shadow">
+                            Get started free
+                        </a>
+                        <!-- Primary button  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header menubar  -->
 
-    <h2 class="text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <!-- Hero area  -->
+    <section class="bg-light-blue overflow-hidden">
+        <div class="container">
+            <div class="flex items-center">
+                <div class="w-full">
+                    <div class="max-w-[390px] py-[60px]">
+                        <h1 class="text-[38px] xl:text-[45px] text-black mb-7 leading-[1.3em]">Web analytics are <span
+                                class="text-white bg-[#1D82F5] px-2">better</span> with Heytrak
+                        </h1>
+                        <p class="text-gray leading-[1.46em] max-w-[328px]">Discover how visitors interact with your
+                            site. Analyze user behavior.Take Action. Set up Heytrak in under a minute.</p>
+
+                        <!-- Buttons wrap  -->
+                        <div class="flex gap-4 mt-5 xl:mt-9">
+                            <!-- Primary button  -->
+                            <a href="#"
+                                class="primary-button py-[14px] px-[34px] rounded-[7px] bg-blue text-white text-[15px] leading-[1.6em] font-medium transition-all duration-300 hover:bg-dark-blue inline-block">
+                                Get free trial
+                            </a>
+                            <!-- Primary button  -->
+                            <!-- Minimal Button  -->
+                            <a href="#"
+                                class="primary-button py-[14px] px-[34px] rounded-[7px] bg-white text-[#0F0F0F] text-[15px] leading-[1.6em] font-medium transition-all duration-300 hover:bg-blue hover:text-white inline-block">
+                                Why Heytrak
+                            </a>
+                            <!-- Minimal Button  -->
+                        </div>
+                        <!-- Buttons wrap  -->
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="-me-20 lg:-me-[24px] xl:-me-[30px] 2xl:-me-[215px] ">
+                        <img src="assets/img/banner-right-image.svg" alt="Banner side" class="max-w-full w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero area  -->
+
+    <!-- Client logos  -->
+    <section class="py-11">
+        <div class="container flex justify-center">
+            <div class="max-w-[885px] flex justify-center gap-[51px]">
+                <div class="w-full">
+                    <img src="/assets/img/client-logo-1.svg" alt="Client logo" class="max-w-full">
+                </div>
+                <div class="w-full">
+                    <img src="/assets/img/client-logo-2.svg" alt="Client logo" class="max-w-full">
+                </div>
+                <div class="w-full">
+                    <img src="/assets/img/client-logo-3.svg" alt="Client logo" class="max-w-full">
+                </div>
+                <div class="w-full">
+                    <img src="/assets/img/client-logo-4.svg" alt="Client logo" class="max-w-full">
+                </div>
+                <div class="w-full">
+                    <img src="/assets/img/client-logo-5.svg" alt="Client logo" class="max-w-full">
+                </div>
+                <div class="w-full">
+                    <img src="/assets/img/client-logo-6.svg" alt="Client logo" class="max-w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client logos  -->
+
+    <!-- Image and content section  -->
+    <section class="py-[72px]">
+        <div class="container">
+            <!-- Section heading  -->
+            <div class=" text-center">
+                <h2 class="text-[40px] leading-[1.15em] text-light-dark mb-5">Discover. Analyze. Take action. Convert.
+                </h2>
+                <p class="text-lg tracking-[-0.533px] text-light-dark">Discover. Analyze. Take action. Convert.</p>
+            </div>
+            <!-- Section heading  -->
+            <!-- Left content section  -->
+            <div class="flex items-center mt-[64px]">
+                <div class="w-full">
+                    <div class="text-light-dark">
+                        <h2 class="text-[30px] leading-[1.29em] tracking-[-0.356px] max-w-[300px] mb-5">Context-Aware &
+                            Personalized</h2>
+                        <p class="text-sm leading-[1.62em] max-w-[400px]">Delight your users with personalized help.
+                            Engage users by
+                            showing them the most useful and timely information, in-app.</p>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div>
+                        <img src="assets/img/context-aware-image.svg" alt="Context aware" class="max-w-full w-full">
+                    </div>
+                </div>
+            </div>
+            <!-- Left content section  -->
+            <!-- Right content section  -->
+            <div class="flex items-center mt-[64px]">
+                <div class="w-full">
+                    <div>
+                        <img src="assets/img/simple-powerful-img.svg" alt="Simple" class="max-w-full w-full">
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="text-light-dark ms-24">
+                        <h2 class="text-[30px] leading-[1.29em] tracking-[-0.356px] max-w-[300px] mb-5">Simple, Yet
+                            Powerful</h2>
+                        <p class="text-sm leading-[1.62em] max-w-[400px]">Create content in intuitive steps—with zero
+                            coding. Unlike most enterprise software, using Whatfix is straightforward.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right content section  -->
+        </div>
+    </section>
+    <!-- Image and content section  -->
+
+    <!-- CTA section -->
+    <section class="py-16 bg-[#872345]">
+        <div class="container text-center">
+            <h2 class="text-white text-xl tracking-[-0.178px] leading-[1.41em] mb-10">Experience the superpower of Heytrak
+                Today</h2>
+            <!-- Primary button  -->
+            <a href="#"
+                class="primary-button py-[17px] px-[34px] rounded-[7px] bg-blue text-white text-[15px] leading-[1.6em] font-medium transition-all duration-300 hover:bg-dark-blue inline-block">
+                Start Your Free Trial
+            </a>
+            <!-- Primary button  -->
+        </div>
+    </section>
+    <!-- CTA section -->
+
 
 </body>
 
