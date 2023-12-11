@@ -41,3 +41,41 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
+/* Accordion CSS */
+
+
+button.accordion:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 9px);
+    width: 18px;
+    height: 18px;
+    background: url('../img/plus-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+button.accordion.is-open:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 9px);
+    width: 18px;
+    height: 18px;
+    background: url('../img/minus-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* button.accordion:hover,
+button.accordion.is-open {
+    background-color: #F5F8FF;
+} */
+
+.accordion-content {
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+}
