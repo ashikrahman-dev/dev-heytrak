@@ -12,3 +12,32 @@ body {
 .ff-dm-mono {
     font-family: 'DM Mono', monospace;
 }
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+
+    list-style-type: none;
+
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.tab.active {
+    border-radius: 100px;
+    background: #1155D4;
+    color: #fff;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
