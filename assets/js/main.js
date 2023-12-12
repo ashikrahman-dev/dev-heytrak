@@ -40,3 +40,23 @@ accordionBtns.forEach((accordion) => {
         }
     };
 });
+
+
+// Mobile menu 
+
+const sidebar = document.getElementById('off-canvas-menu');
+const closeButton = document.getElementById('close-button');
+const humbargMenu = document.getElementById('humbarg');
+
+
+humbargMenu.addEventListener('click', () => {
+    sidebar.classList.toggle('open')
+});
+
+closeButton.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+});
+
+// sidebar.addEventListener('click', (event) => {
+//     sidebar.classList.add('open');
+// });

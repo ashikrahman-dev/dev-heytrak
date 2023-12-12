@@ -101,3 +101,41 @@ button.accordion.is-open {
     transform: translate(0,0);
     }
 }
+
+
+/* Off canvas menu */
+
+.off-canvas-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+}
+/* 
+.off-canvas-menu.open {
+    transform: translateX(0);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .off-canvas-menu {
+    width: 100%;
+    }
+} */
+
+.off-canvas-menu.open {
+    left: 0px;
+}
