@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.62em;
+    font-size: 16px;
+}
+
+.ff-dm-mono {
+    font-family: 'DM Mono', monospace;
+}
