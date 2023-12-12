@@ -590,10 +590,6 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -604,14 +600,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.z-\[\] {
-  z-index: ;
-}
-
-.z-\[9999\] {
-  z-index: 9999;
 }
 
 .z-\[99999\] {
@@ -664,6 +652,10 @@ video {
   margin-inline-end: 0px;
 }
 
+.me-20 {
+  margin-inline-end: 5rem;
+}
+
 .me-4 {
   margin-inline-end: 1rem;
 }
@@ -682,10 +674,6 @@ video {
 
 .mt-11 {
   margin-top: 2.75rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-20 {
@@ -764,12 +752,12 @@ video {
   width: 5rem;
 }
 
-.w-full {
-  width: 100%;
+.w-\[700px\] {
+  width: 700px;
 }
 
-.min-w-\[700px\] {
-  min-width: 700px;
+.w-full {
+  width: 100%;
 }
 
 .max-w-\[300px\] {
@@ -792,12 +780,12 @@ video {
   max-width: 100%;
 }
 
-.basis-2\/12 {
-  flex-basis: 16.666667%;
+.shrink-0 {
+  flex-shrink: 0;
 }
 
-.basis-5\/12 {
-  flex-basis: 41.666667%;
+.basis-2\/12 {
+  flex-basis: 16.666667%;
 }
 
 .cursor-pointer {
@@ -914,12 +902,8 @@ video {
   overflow: hidden;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
-.rounded-\[100px\] {
-  border-radius: 100px;
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .rounded-\[4px\] {
@@ -932,6 +916,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-t-\[4px\] {
@@ -1058,6 +1046,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-\[5px\] {
+  padding: 5px;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1096,6 +1088,11 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-3 {
@@ -1177,16 +1174,16 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
 .pt-\[60px\] {
   padding-top: 60px;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-left {
@@ -1500,10 +1497,6 @@ body {
   display: block;
 }
 
-.tabs {
-  list-style-type: none;
-}
-
 .tab {
   cursor: pointer;
 }
@@ -1512,11 +1505,6 @@ body {
   border-radius: 100px;
   background: #1155D4;
   color: #fff;
-}
-
-.tab-content {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 /* Accordion CSS */
@@ -1720,6 +1708,10 @@ button.accordion.is-open {
     flex-direction: row;
   }
 
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .sm\:gap-0 {
     gap: 0px;
   }
@@ -1740,12 +1732,21 @@ button.accordion.is-open {
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
+  .sm\:rounded-\[100px\] {
+    border-radius: 100px;
+  }
+
   .sm\:border-b {
     border-bottom-width: 1px;
   }
 
   .sm\:border-r {
     border-right-width: 1px;
+  }
+
+  .sm\:py-\[5px\] {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .sm\:pt-5 {
@@ -1767,6 +1768,10 @@ button.accordion.is-open {
     margin-inline-start: 2.5rem;
   }
 
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:mt-\[64px\] {
     margin-top: 64px;
   }
@@ -1781,6 +1786,10 @@ button.accordion.is-open {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:basis-5\/12 {
+    flex-basis: 41.666667%;
   }
 
   .md\:flex-row {
@@ -1854,6 +1863,10 @@ button.accordion.is-open {
     margin-bottom: 1.25rem;
   }
 
+  .lg\:me-0 {
+    margin-inline-end: 0px;
+  }
+
   .lg\:ms-24 {
     margin-inline-start: 6rem;
   }
@@ -1888,6 +1901,10 @@ button.accordion.is-open {
 
   .lg\:max-w-\[520px\] {
     max-width: 520px;
+  }
+
+  .lg\:shrink {
+    flex-shrink: 1;
   }
 
   .lg\:flex-row {

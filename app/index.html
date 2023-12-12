@@ -13,7 +13,8 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Inter:wght@400;500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Google fonts End -->
 </head>
@@ -21,10 +22,10 @@
 <body>
 
     <!-- Header menubar  -->
-    <header class="header py-[17px] border-b border-[#E8E8E8]">
+    <header class=" py-[17px] border-b border-[#E8E8E8] sticky top-0 z-[99999] w-full  bg-white">
         <div class="container">
             <div class="flex justify-between items-center">
-                <div class="w-full md:w-2/3">
+                <div class="w-full lg:w-2/3">
                     <div class="flex gap-7 items-center">
                         <!-- Logo  -->
                         <div class="logo-wrap">
@@ -34,72 +35,161 @@
                         </div>
                         <!-- Logo  -->
                         <!-- Menu -->
-                        <nav class="flex gap-5">
-                            <a href="#"
-                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
-                                Why Heytrak
-                            </a>
-                            <a href="#"
-                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
-                                Solutions
-                            </a>
-                            <a href="#"
-                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
-                                Pricing
-                            </a>
-                            <a href="#"
-                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
-                                About us
-                            </a>
-                            <a href="#"
-                                class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
-                                Support
-                            </a>
-                        </nav>
+                        <div class="hidden lg:block">
+                            <nav class="flex gap-5 ">
+                                <a href="#"
+                                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                    Why Heytrak
+                                </a>
+                                <a href="#"
+                                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                    Solutions
+                                </a>
+                                <a href="pricing.html"
+                                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                    Pricing
+                                </a>
+                                <a href="#"
+                                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                    About us
+                                </a>
+                                <a href="#"
+                                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                                    Support
+                                </a>
+                            </nav>
+                        </div>
+
                         <!-- Menu -->
                     </div>
                 </div>
-                <div class="w-full md:w-1/3">
-                    <div class="flex gap-5 justify-end">
-                        <!-- sign in button  -->
-                        <a href="#"
-                            class="font-[15px] text-light-dark leading-[1.6em] flex gap-2 items-center hover:text-blue transition-all duration-150 group">
-                            <span>
-                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+
+                <div class="w-full lg:w-1/3">
+                    <div class="hidden lg:block">
+                        <div class="flex gap-5 justify-end ">
+                            <!-- sign in button  -->
+                            <a href="#"
+                                class="font-[15px] text-light-dark leading-[1.6em] flex gap-2 items-center hover:text-blue transition-all duration-150 group">
+                                <span>
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.5 6.41C8.15685 6.41 9.5 5.06685 9.5 3.41C9.5 1.75315 8.15685 0.410004 6.5 0.410004C4.84315 0.410004 3.5 1.75315 3.5 3.41C3.5 5.06685 4.84315 6.41 6.5 6.41ZM6.5 7.41C3.18629 7.41 0.5 10.0963 0.5 13.41H12.5C12.5 10.0963 9.81371 7.41 6.5 7.41Z"
+                                            fill="#35324A"
+                                            class="group-hover:fill-blue group-hover:transition-all group-hover:duration-150" />
+                                    </svg>
+                                </span>
+                                Sign In
+                            </a>
+                            <!-- sign in button  -->
+                            <!-- Primary button  -->
+                            <a href="#"
+                                class="primary-button py-[9px] px-6 rounded-[4px] bg-blue text-white text-[15px] leading-[1.6em] border-[2px] border-dark-blue shadow-btn-shadow transition-all duration-150 hover:bg-dark-blue">
+                                Get started free
+                            </a>
+                            <!-- Primary button  -->
+                        </div>
+                    </div>
+
+                    <div class="block lg:hidden">
+                        <div class="flex gap-5 justify-end ">
+                            <button id="humbarg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M6.5 6.41C8.15685 6.41 9.5 5.06685 9.5 3.41C9.5 1.75315 8.15685 0.410004 6.5 0.410004C4.84315 0.410004 3.5 1.75315 3.5 3.41C3.5 5.06685 4.84315 6.41 6.5 6.41ZM6.5 7.41C3.18629 7.41 0.5 10.0963 0.5 13.41H12.5C12.5 10.0963 9.81371 7.41 6.5 7.41Z"
-                                        fill="#35324A"
-                                        class="group-hover:fill-blue group-hover:transition-all group-hover:duration-150" />
+                                    <g clip-path="url(#clip0_284_30059)">
+                                        <path d="M24 11.0006H0V13.0006H24V11.0006Z" fill="#374957" />
+                                        <path d="M24 4.00024H0V6.00024H24V4.00024Z" fill="#374957" />
+                                        <path d="M24 18H0V20H24V18Z" fill="#374957" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_284_30059">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
                                 </svg>
-                            </span>
-                            Sign In
-                        </a>
-                        <!-- sign in button  -->
-                        <!-- Primary button  -->
-                        <a href="#"
-                            class="primary-button py-[9px] px-6 rounded-[4px] bg-blue text-white text-[15px] leading-[1.6em] border-[2px] border-dark-blue shadow-btn-shadow">
-                            Get started free
-                        </a>
-                        <!-- Primary button  -->
+                            </button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
     <!-- Header menubar  -->
 
+    <!-- Menu -->
+    <div class="min-h-full fixed top-0 off-canvas-menu px-5 py-8 shadow-2xl" id="off-canvas-menu">
+        <div class="pt-16">
+
+            <nav class="flex flex-col gap-5">
+                <a href="#"
+                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                    Why Heytrak
+                </a>
+                <a href="#"
+                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                    Solutions
+                </a>
+                <a href="pricing.html"
+                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                    Pricing
+                </a>
+                <a href="#"
+                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                    About us
+                </a>
+                <a href="#"
+                    class="text-[15px] leading-[1.6em] text-light-dark hover:text-blue transition-all duration-150">
+                    Support
+                </a>
+            </nav>
+
+            <div class="gap-5 mt-7">
+                <!-- sign in button  -->
+                <a href="#"
+                    class="font-[15px] text-light-dark leading-[1.6em] flex gap-2 items-center hover:text-blue transition-all duration-150 group mb-5">
+                    <span>
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.5 6.41C8.15685 6.41 9.5 5.06685 9.5 3.41C9.5 1.75315 8.15685 0.410004 6.5 0.410004C4.84315 0.410004 3.5 1.75315 3.5 3.41C3.5 5.06685 4.84315 6.41 6.5 6.41ZM6.5 7.41C3.18629 7.41 0.5 10.0963 0.5 13.41H12.5C12.5 10.0963 9.81371 7.41 6.5 7.41Z"
+                                fill="#35324A"
+                                class="group-hover:fill-blue group-hover:transition-all group-hover:duration-150" />
+                        </svg>
+                    </span>
+                    Sign In
+                </a>
+                <!-- sign in button  -->
+                <!-- Primary button  -->
+                <a href="#"
+                    class="primary-button py-[9px] px-6 rounded-[4px] bg-blue text-white text-[15px] leading-[1.6em] border-[2px] border-dark-blue shadow-btn-shadow transition-all duration-150 hover:bg-dark-blue inline-flex ">
+                    Get started free
+                </a>
+                <!-- Primary button  -->
+            </div>
+        </div>
+    </div>
+    <!-- Menu -->
+
     <!-- Hero area  -->
     <section class="bg-light-blue overflow-hidden">
         <div class="container">
-            <div class="flex items-center">
+            <div class="flex items-center flex-col-reverse lg:flex-row">
                 <div class="w-full">
-                    <div class="max-w-[390px] py-[60px]">
-                        <h1 class="text-[38px] xl:text-[45px] text-black mb-7 leading-[1.3em]">Web analytics are <span
-                                class="text-white bg-[#1D82F5] px-2">better</span> with Heytrak
-                        </h1>
-                        <p class="text-gray leading-[1.46em] max-w-[328px]">Discover how visitors interact with your
-                            site. Analyze user behavior.Take Action. Set up Heytrak in under a minute.</p>
+                    <div class="sm:max-w-[500px] lg:max-w-[390px] py-[60px]">
+                        <div class="overflow-hidden">
+                            <h1
+                                class="text-[28px] lg:text-[38px] xl:text-[45px] text-black mb-7 leading-[1.3em] animation-span1">
+                                Web
+                                analytics are <span class="text-white bg-[#1D82F5] px-2">better</span> with Heytrak
+                            </h1>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p
+                                class="text-sm lg:text-base text-gray leading-[1.46em] sm:max-w-[500px] lg:max-w-[328px] animation-span2">
+                                Discover how visitors
+                                interact with your
+                                site. Analyze user behavior.Take Action. Set up Heytrak in under a minute.</p>
+                        </div>
 
                         <!-- Buttons wrap  -->
                         <div class="flex gap-4 mt-5 xl:mt-9">
@@ -120,7 +210,7 @@
                     </div>
                 </div>
                 <div class="w-full">
-                    <div class="-me-20 lg:-me-[24px] xl:-me-[30px] 2xl:-me-[215px] ">
+                    <div class="me-0 lg:-me-[24px] xl:-me-[30px] 2xl:-me-[215px] pt-10 lg:pt-0">
                         <img src="assets/img/banner-right-image.svg" alt="Banner side" class="max-w-full w-full">
                     </div>
                 </div>
@@ -132,24 +222,24 @@
     <!-- Client logos  -->
     <section class="py-11">
         <div class="container flex justify-center">
-            <div class="max-w-[885px] flex justify-center gap-[51px]">
-                <div class="w-full">
-                    <img src="assets/img/client-logo-1.svg" alt="Client logo" class="max-w-full">
+            <div class="max-w-[885px] flex justify-center gap-6 lg:gap-[51px] flex-wrap md:flex-nowrap">
+                <div class="w-20 md:w-full">
+                    <img src="/assets/img/client-logo-1.svg" alt="Client logo" class="max-w-full">
                 </div>
-                <div class="w-full">
-                    <img src="assets/img/client-logo-2.svg" alt="Client logo" class="max-w-full">
+                <div class="w-20 md:w-full">
+                    <img src="/assets/img/client-logo-2.svg" alt="Client logo" class="max-w-full">
                 </div>
-                <div class="w-full">
-                    <img src="assets/img/client-logo-3.svg" alt="Client logo" class="max-w-full">
+                <div class="w-20 md:w-full">
+                    <img src="/assets/img/client-logo-3.svg" alt="Client logo" class="max-w-full">
                 </div>
-                <div class="w-full">
-                    <img src="assets/img/client-logo-4.svg" alt="Client logo" class="max-w-full">
+                <div class="w-20 md:w-full">
+                    <img src="/assets/img/client-logo-4.svg" alt="Client logo" class="max-w-full">
                 </div>
-                <div class="w-full">
-                    <img src="assets/img/client-logo-5.svg" alt="Client logo" class="max-w-full">
+                <div class="w-20 md:w-full">
+                    <img src="/assets/img/client-logo-5.svg" alt="Client logo" class="max-w-full">
                 </div>
-                <div class="w-full">
-                    <img src="assets/img/client-logo-6.svg" alt="Client logo" class="max-w-full">
+                <div class="w-20 md:w-full">
+                    <img src="/assets/img/client-logo-6.svg" alt="Client logo" class="max-w-full">
                 </div>
             </div>
         </div>
@@ -161,16 +251,20 @@
         <div class="container">
             <!-- Section heading  -->
             <div class=" text-center">
-                <h2 class="text-[40px] leading-[1.15em] text-light-dark mb-5">Discover. Analyze. Take action. Convert.
+                <h2 class="text-[26px] md:text-[30px] lg:text-[40px] leading-[1.15em] text-light-dark mb-5">Discover.
+                    Analyze. Take
+                    action. Convert.
                 </h2>
                 <p class="text-lg tracking-[-0.533px] text-light-dark">Discover. Analyze. Take action. Convert.</p>
             </div>
             <!-- Section heading  -->
             <!-- Left content section  -->
-            <div class="flex items-center mt-[64px]">
+            <div class="flex flex-col-reverse gap-8 md:gap-0 md:flex-row items-center mt-10 md:mt-[64px]">
                 <div class="w-full">
                     <div class="text-light-dark">
-                        <h2 class="text-[30px] leading-[1.29em] tracking-[-0.356px] max-w-[300px] mb-5">Context-Aware &
+                        <h2
+                            class="text-xl md:text-2xl lg:text-[30px] leading-[1.29em] tracking-[-0.356px] max-w-[300px] mb-5">
+                            Context-Aware &
                             Personalized</h2>
                         <p class="text-sm leading-[1.62em] max-w-[400px]">Delight your users with personalized help.
                             Engage users by
@@ -185,15 +279,17 @@
             </div>
             <!-- Left content section  -->
             <!-- Right content section  -->
-            <div class="flex items-center mt-[64px]">
+            <div class="flex flex-col md:flex-row gap-8 md:gap-0 items-center mt-10 md:mt-[64px]">
                 <div class="w-full">
                     <div>
                         <img src="assets/img/simple-powerful-img.svg" alt="Simple" class="max-w-full w-full">
                     </div>
                 </div>
                 <div class="w-full">
-                    <div class="text-light-dark ms-24">
-                        <h2 class="text-[30px] leading-[1.29em] tracking-[-0.356px] max-w-[300px] mb-5">Simple, Yet
+                    <div class="text-light-dark md:ms-10 lg:ms-24">
+                        <h2
+                            class="text-xl md:text-2xl lg:text-[30px] leading-[1.29em] tracking-[-0.356px] max-w-[300px] mb-5">
+                            Simple, Yet
                             Powerful</h2>
                         <p class="text-sm leading-[1.62em] max-w-[400px]">Create content in intuitive steps—with zero
                             coding. Unlike most enterprise software, using Whatfix is straightforward.</p>
@@ -205,10 +301,247 @@
     </section>
     <!-- Image and content section  -->
 
+    <!-- Numbers section  -->
+    <section class="bg-[#171F29] py-[60px] lg:py-[100px]">
+        <div class="container">
+            <!-- section heading -->
+            <div class="text-center mb-5 md:mb-10 lg:mb-16">
+                <p
+                    class="font-dm-mono uppercase text-orange font-medium leading-[1.25em] text-xs md:text-sm tracking-[0.711px] mb-2">
+                    By The Numbers</p>
+                <h2 class="text-2xl lg:text-[30px] text-white leading-[1.33em]">With Heytrak you could</h2>
+            </div>
+            <!-- section heading -->
+            <div class="flex flex-col divide-y divide-[#AED2F3] gap-5">
+                <div
+                    class="flex flex-col sm:flex-row justify-around divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-[#AED2F3] gap-5 sm:gap-5">
+                    <div class="numbers-box text-center w-full pt-5 pb-4 px-5">
+                        <h2
+                            class="text-orange text-[32px] lg:text-[45px] leading-[1.30em] tracking-[-0.711px] mb-3 lg:mb-5">
+                            1.25x</h2>
+                        <p class="text-white text-xs lg:text-base">Increase in employee productivity</p>
+                    </div>
+                    <div class="numbers-box text-center w-full pt-5 pb-4 px-5">
+                        <h2
+                            class="text-orange text-[32px] lg:text-[45px] leading-[1.30em] tracking-[-0.711px] mb-3 lg:mb-5">
+                            25%
+                        </h2>
+                        <p class="text-white text-xs lg:text-base">Improvement in efficiency</p>
+                    </div>
+                    <div class="numbers-box text-center w-full pt-5 pb-4 px-5">
+                        <h2
+                            class="text-orange text-[32px] lg:text-[45px] leading-[1.30em] tracking-[-0.711px] mb-3 lg:mb-5">
+                            30%
+                        </h2>
+                        <p class="text-white text-xs lg:text-base">Reduction in manual data entry</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col sm:flex-row justify-around divide-y sm:divide-y-0 divide-x-0 sm:divide-x divide-[#AED2F3] pt-0 sm:pt-5 gap-5 sm:gap-5">
+                    <div class="numbers-box text-center w-full pt-5 pb-4 px-5">
+                        <h2
+                            class="text-orange text-[32px] lg:text-[45px] leading-[1.30em] tracking-[-0.711px] mb-3 lg:mb-5">
+                            100%</h2>
+                        <p class="text-white text-xs lg:text-base">Increase in capacity to handle growth</p>
+                    </div>
+                    <div class="numbers-box text-center w-full pt-5 pb-4 px-5">
+                        <h2
+                            class="text-orange text-[32px] lg:text-[45px] leading-[1.30em] tracking-[-0.711px] mb-3 lg:mb-5">
+                            3x
+                        </h2>
+                        <p class="text-white text-xs lg:text-base">Faster time to proficiency for a new employee</p>
+                    </div>
+                    <div class="numbers-box text-center w-full pt-5 pb-4 px-5">
+                        <h2
+                            class="text-orange text-[32px] lg:text-[45px] leading-[1.30em] tracking-[-0.711px] mb-3 lg:mb-5">
+                            50%
+                        </h2>
+                        <p class="text-white text-xs lg:text-base">Increase in workforce productivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Numbers section  -->
+
+    <!-- Tab section  -->
+    <section class="py-[60px] lg:py-[72px]">
+        <div class="container">
+            <!-- Section heading -->
+            <div class="text-center flex justify-center">
+                <h2
+                    class="text-2xl md:text-[30px] lg:text-[40px] text-light-dark leading-[1.15em] tracking-[-0.533px] lg:max-w-[520px] mb-8 md:mb-10 lg:mb-14">
+                    One app to replace them all. Check it out:
+                </h2>
+            </div>
+            <!-- Section heading -->
+            <div class="flex">
+                <div class="tab-wrapper">
+                    <!-- Tab button wrapper -->
+
+                    <div class="flex w-full justify-center">
+                        <ul
+                            class="tabs bg-[#2b24390d] rounded-md sm:rounded-[100px] flex flex-wrap sm:flex-nowrap justify-center gap-2 lg:gap-3 text-sm lg:text-base p-[5px] py-2 sm:py-[5px] list-none">
+                            <li data-tab-target="#web_analytics"
+                                class="active tab py-3 px-5 inline-block text-light-dark hover:bg-blue transition-all duration-300 hover:text-white rounded-full">
+                                Web
+                                Analytics</li>
+                            <li data-tab-target="#session_replays"
+                                class="tab py-3 px-5 inline-block text-light-dark hover:bg-blue transition-all duration-300 hover:text-white rounded-full">
+                                Session
+                                Replays
+                            </li>
+                            <li data-tab-target="#headmaps"
+                                class="tab py-3 px-5 inline-block text-light-dark hover:bg-blue transition-all duration-300 hover:text-white rounded-full">
+                                Headmaps
+                            </li>
+                            <li data-tab-target="#goals"
+                                class="tab py-3 px-5 inline-block text-light-dark hover:bg-blue transition-all duration-300 hover:text-white rounded-full">
+                                Goals</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab button wrapper -->
+
+                    <!-- Tab content -->
+                    <div class="tab-content w-full mt-10 md:mt-16">
+                        <div id="web_analytics" data-tab-content class="active" class="w-full">
+                            <div class="tab-inner-wrap flex items-center gap-8 lg:gap-20 flex-col-reverse lg:flex-row">
+                                <div class="w-full lg:w-1/3">
+                                    <ul class="list-none p-0">
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Initiate the perfect handshake with a personalized employee onboarding
+                                            experience
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Welcome new users with the first call-to-action based on their role
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Provide option to new users to discover the application with a guided tour
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-full lg:w-2/3">
+                                    <div class="">
+                                        <img src="assets/img/web-analytics-image.png" alt="web analytics"
+                                            class="max-w-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="session_replays" data-tab-content class="w-full">
+                            <div class="tab-inner-wrap flex items-center gap-8 lg:gap-20 flex-col-reverse lg:flex-row">
+                                <div class="w-full lg:w-1/3">
+                                    <p class="text-2xl mb-5">Session Replays</p>
+                                    <ul class="list-none p-0">
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Initiate the perfect handshake with a personalized employee onboarding
+                                            experience
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Welcome new users with the first call-to-action based on their role
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Provide option to new users to discover the application with a guided tour
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-full lg:w-2/3">
+                                    <div class="">
+                                        <img src="assets/img/web-analytics-image.png" alt="web analytics"
+                                            class="max-w-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="headmaps" data-tab-content class="w-full">
+                            <div class="tab-inner-wrap flex items-center gap-8 lg:gap-20 flex-col-reverse lg:flex-row">
+                                <div class="w-full lg:w-1/3">
+                                    <p class="text-2xl mb-5">Headmaps</p>
+                                    <ul class="list-none p-0">
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Initiate the perfect handshake with a personalized employee onboarding
+                                            experience
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Welcome new users with the first call-to-action based on their role
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Provide option to new users to discover the application with a guided tour
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-full lg:w-2/3">
+                                    <div class="">
+                                        <img src="assets/img/web-analytics-image.png" alt="web analytics"
+                                            class="max-w-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="goals" data-tab-content class="w-full">
+                            <div class="tab-inner-wrap flex items-center gap-8 lg:gap-20 flex-col-reverse lg:flex-row">
+                                <div class="w-full lg:w-1/3">
+                                    <p class="text-2xl mb-5">Goals</p>
+                                    <ul class="list-none p-0">
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Initiate the perfect handshake with a personalized employee onboarding
+                                            experience
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Welcome new users with the first call-to-action based on their role
+                                        </li>
+                                        <li class="relative ms-3 ps-3">
+                                            <span
+                                                class="before:absolute before:content-[''] before:-left-2 before:top-[7px] before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full"></span>
+                                            Provide option to new users to discover the application with a guided tour
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-full lg:w-2/3">
+                                    <div class="">
+                                        <img src="assets/img/web-analytics-image.png" alt="web analytics"
+                                            class="max-w-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab content -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tab section  -->
+
     <!-- CTA section -->
     <section class="py-16 bg-[#872345]">
         <div class="container text-center">
-            <h2 class="text-white text-xl tracking-[-0.178px] leading-[1.41em] mb-10">Experience the superpower of Heytrak
+            <h2 class="text-white text-xl tracking-[-0.178px] leading-[1.41em] mb-10">Experience the superpower of
+                Heytrak
                 Today</h2>
             <!-- Primary button  -->
             <a href="#"
@@ -220,6 +553,176 @@
     </section>
     <!-- CTA section -->
 
+    <!-- Footer area -->
+    <footer class="pt-[60px] bg-[#171F29] text-white">
+        <div class="container">
+            <div class="flex flex-col md:flex-row gap-10 md:gap-0">
+                <div class="w-full md:w-4/12 lg:w-full">
+                    <div class="">
+                        <a href="index.html">
+                            <img src="assets/img/footer-logo.svg" alt="footer logo" class="max-w-full">
+                        </a>
+                        <h3 class="text-lg lg:text-[22px] leading-[1.41em] tracking-[-0.178px] mt-7 sm:max-w-[285px]">
+                            Discover.
+                            Analyze. Take action.
+                            Convert.</h3>
+                    </div>
+                </div>
+                <div class="w-full md:w-8/12 lg:w-full">
+                    <div class="footer-menu-widget flex flex-col sm:flex-row gap-8 sm:gap-0">
+                        <!-- Menu widget 1 -->
+                        <div class="w-full">
+                            <div class="">
+                                <h4
+                                    class="text-[#AED2F3] font-dm-mono text-[13px] uppercase leading-[1.42em] tracking-[0.711px]">
+                                    Explore
+                                </h4>
+                                <nav class="flex flex-col gap-1 mt-5">
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Why
+                                        Heytrak</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Pricing</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Try
+                                        for free</a>
+                                </nav>
+                            </div>
+                            <div class="mt-11">
+                                <h4
+                                    class="text-[#AED2F3] font-dm-mono text-[13px] uppercase leading-[1.42em] tracking-[0.711px]">
+                                    PRODUCTS
+                                </h4>
+                                <nav class="flex flex-col gap-1 mt-5">
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Web
+                                        Analytics</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Session
+                                        Replay</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Headmaps</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Goals</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Menu widget 1 -->
+                        <!-- Menu widget 2 -->
+                        <div class="w-full">
+                            <div class="">
+                                <h4
+                                    class="text-[#AED2F3] font-dm-mono text-[13px] uppercase leading-[1.42em] tracking-[0.711px]">
+                                    Support
+                                </h4>
+                                <nav class="flex flex-col gap-1 mt-5">
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Heytrak
+                                        Support</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">FAQs</a>
+                                </nav>
+                            </div>
+                            <div class="mt-11">
+                                <h4
+                                    class="text-[#AED2F3] font-dm-mono text-[13px] uppercase leading-[1.42em] tracking-[0.711px]">
+                                    Resources
+                                </h4>
+                                <nav class="flex flex-col gap-1 mt-5">
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Resource
+                                        Library</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Blog</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Heytrak
+                                        University</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Menu widget 2 -->
+                        <!-- Menu widget 3 -->
+                        <div class="w-full">
+                            <div class="">
+                                <h4
+                                    class="text-[#AED2F3] font-dm-mono text-[13px] uppercase leading-[1.42em] tracking-[0.711px]">
+                                    Company
+                                </h4>
+                                <nav class="flex flex-col gap-1 mt-5">
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">About
+                                        Us</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Careers</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Terms</a>
+                                    <a href="#"
+                                        class="text-xs leading-[1.53em] hover:text-orange transition-all duration-200">Privacy</a>
+                                </nav>
+                            </div>
+                            <div class="mt-11">
+                                <h4
+                                    class="text-[#AED2F3] font-dm-mono text-[13px] uppercase leading-[1.42em] tracking-[0.711px]">
+                                    Follow
+                                </h4>
+                                <nav class="flex gap-4 mt-5">
+                                    <a href="#" class="text-xs leading-[1.53em] group">
+                                        <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.9648 5.03605C19.9648 5.24438 19.9648 5.41105 19.9648 5.61938C19.9648 11.4111 15.5898 18.0361 7.54818 18.0361C5.04818 18.0361 2.75651 17.3277 0.839844 16.0777C1.17318 16.1194 1.50651 16.1611 1.88151 16.1611C3.92318 16.1611 5.79818 15.4527 7.29818 14.2861C5.38151 14.2444 3.75651 12.9944 3.21484 11.2444C3.50651 11.2861 3.75651 11.3277 4.04818 11.3277C4.42318 11.3277 4.83984 11.2444 5.17318 11.1611C3.17318 10.7444 1.67318 8.99438 1.67318 6.86938V6.82772C2.25651 7.16105 2.96484 7.32772 3.67318 7.36938C2.46484 6.57772 1.71484 5.24438 1.71484 3.74438C1.71484 2.91105 1.92318 2.16105 2.29818 1.53605C4.46484 4.16105 7.71484 5.91105 11.3398 6.11938C11.2565 5.78605 11.2148 5.45272 11.2148 5.11938C11.2148 2.70272 13.1732 0.744384 15.5898 0.744384C16.8398 0.744384 17.9648 1.24438 18.7982 2.11938C19.7565 1.91105 20.7148 1.53605 21.5482 1.03605C21.2148 2.07772 20.5482 2.91105 19.6315 3.45272C20.5065 3.36938 21.3815 3.11938 22.1315 2.78605C21.5482 3.66105 20.7982 4.41105 19.9648 5.03605Z"
+                                                fill="white"
+                                                class="group-hover:fill-orange transition-all duration-200" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="text-xs leading-[1.53em] group">
+                                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.062 10.3694C21.062 15.5361 17.2703 19.8277 12.312 20.5777V13.3694H14.7287L15.187 10.3694H12.312V8.45272C12.312 7.61938 12.7287 6.82772 14.0203 6.82772H15.312V4.28605C15.312 4.28605 14.1453 4.07772 12.9787 4.07772C10.6453 4.07772 9.10368 5.53605 9.10368 8.11938V10.3694H6.47868V13.3694H9.10368V20.5777C4.14535 19.8277 0.395345 15.5361 0.395345 10.3694C0.395345 4.66105 5.02035 0.0360509 10.7287 0.0360509C16.437 0.0360509 21.062 4.66105 21.062 10.3694Z"
+                                                fill="white"
+                                                class="group-hover:fill-orange transition-all duration-200" />
+                                        </svg>
+
+                                    </a>
+                                    <a href="#" class="text-xs leading-[1.53em] group">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.6175 0.0360509C18.3258 0.0360509 18.9508 0.661051 18.9508 1.41105V17.3694C18.9508 18.1194 18.3258 18.7027 17.6175 18.7027H1.57585C0.867513 18.7027 0.28418 18.1194 0.28418 17.3694V1.41105C0.28418 0.661051 0.867513 0.0360509 1.57585 0.0360509H17.6175ZM5.90918 16.0361V7.16105H3.15918V16.0361H5.90918ZM4.53418 5.91105C5.40918 5.91105 6.11751 5.20272 6.11751 4.32772C6.11751 3.45272 5.40918 2.70272 4.53418 2.70272C3.61751 2.70272 2.90918 3.45272 2.90918 4.32772C2.90918 5.20272 3.61751 5.91105 4.53418 5.91105ZM16.2842 16.0361V11.1611C16.2842 8.78605 15.7425 6.91105 12.9508 6.91105C11.6175 6.91105 10.7008 7.66105 10.3258 8.36938H10.2842V7.16105H7.65918V16.0361H10.4092V11.6611C10.4092 10.4944 10.6175 9.36938 12.0758 9.36938C13.4925 9.36938 13.4925 10.7027 13.4925 11.7027V16.0361H16.2842Z"
+                                                fill="white"
+                                                class="group-hover:fill-orange transition-all duration-200" />
+                                        </svg>
+
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Menu widget 3 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer copyright area  -->
+            <div class="text-xs text-[#ffffff4d] text-center py-5 flex flex-col md:flex-row gap-4 justify-center mt-20">
+                <div class="">
+                    © 2023 Heytrak, a THECLOUDCOMPANY LTD Product
+                </div>
+                <div class="">
+                    <nav class="flex gap-4 justify-center">
+                        <a href="#" class="hover:text-white transition-all duration-300">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-all duration-300">Terms of Service</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- Footer copyright area  -->
+        </div>
+    </footer>
+    <!-- Footer area -->
+
+
+    <!-- Script fils -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 

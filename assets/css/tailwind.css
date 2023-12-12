@@ -21,12 +21,6 @@ body {
     display: block;
 }
 
-.tabs {
-
-    list-style-type: none;
-
-}
-
 .tab {
     cursor: pointer;
 }
@@ -37,10 +31,6 @@ body {
     color: #fff;
 }
 
-.tab-content {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 
 /* Accordion CSS */
