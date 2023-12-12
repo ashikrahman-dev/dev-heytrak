@@ -696,6 +696,10 @@ video {
   margin-top: 18px;
 }
 
+.me-5 {
+  margin-inline-end: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -758,6 +762,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
+.min-w-\[150px\] {
+  min-width: 150px;
+}
+
+.min-w-\[130px\] {
+  min-width: 130px;
 }
 
 .max-w-\[300px\] {
