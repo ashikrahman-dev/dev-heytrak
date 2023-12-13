@@ -652,10 +652,6 @@ video {
   margin-inline-end: 0px;
 }
 
-.me-20 {
-  margin-inline-end: 5rem;
-}
-
 .me-4 {
   margin-inline-end: 1rem;
 }
@@ -694,10 +690,6 @@ video {
 
 .mt-\[18px\] {
   margin-top: 18px;
-}
-
-.me-5 {
-  margin-inline-end: 1.25rem;
 }
 
 .block {
@@ -756,20 +748,8 @@ video {
   width: 5rem;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.min-w-\[200px\] {
-  min-width: 200px;
-}
-
-.min-w-\[150px\] {
-  min-width: 150px;
 }
 
 .min-w-\[130px\] {
