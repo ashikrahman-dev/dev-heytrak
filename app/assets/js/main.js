@@ -47,18 +47,11 @@ accordionBtns.forEach((accordion) => {
 
 const sidebar = document.getElementById('offCanvasMenu'); // Sidebar
 const toggleBtn = document.getElementById('toggleBtn'); // Icon
+const closeBtn = document.getElementById('closeBtn'); // Close Button
 
-// document.onclick = function(e) {
-//     if(e.target.id !== 'offCanvasMenu' && e.target.id !== 'toggleBtn') {
-//         toggleBtn.classList.remove('open');
-//         sidebar.classList.remove('open');
-//     }
-// }
-
-// toggleBtn.onclick = function() {
-//     toggleBtn.classList.toggle('open');
-//     sidebar.classList.toggle('open');
-// }
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+})
 
 function toggleMenu() {
     toggleBtn.classList.toggle('open');
