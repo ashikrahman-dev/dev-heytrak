@@ -1,4 +1,4 @@
-// Tab JS 
+// Tab JS
 
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
@@ -43,20 +43,51 @@ accordionBtns.forEach((accordion) => {
 
 
 // Mobile menu 
+// const closeButton = document.getElementById('close-button');
 
-const sidebar = document.getElementById('off-canvas-menu');
-const closeButton = document.getElementById('close-button');
-const humbargMenu = document.getElementById('humbarg');
+const sidebar = document.getElementById('offCanvasMenu'); // Sidebar
+const toggleBtn = document.getElementById('toggleBtn'); // Icon
 
+// document.onclick = function(e) {
+//     if(e.target.id !== 'offCanvasMenu' && e.target.id !== 'toggleBtn') {
+//         toggleBtn.classList.remove('open');
+//         sidebar.classList.remove('open');
+//     }
+// }
 
-humbargMenu.addEventListener('click', () => {
-    sidebar.classList.toggle('open')
+// toggleBtn.onclick = function() {
+//     toggleBtn.classList.toggle('open');
+//     sidebar.classList.toggle('open');
+// }
+
+function toggleMenu() {
+    toggleBtn.classList.toggle('open');
+    sidebar.classList.toggle('open');
+}
+
+// Event listener for the toggle button
+toggleBtn.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent the click from propagating to the document
+    toggleMenu();
 });
 
-closeButton.addEventListener('click', () => {
-    sidebar.classList.remove('open');
+// Event listener on the document to handle clicks outside the menu
+document.addEventListener('click', function(e) {
+    const isClickInside = sidebar.contains(e.target) || toggleBtn.contains(e.target);
+    
+    if (!isClickInside) {
+        toggleBtn.classList.remove('open');
+        sidebar.classList.remove('open');
+    }
 });
 
-// sidebar.addEventListener('click', (event) => {
-//     sidebar.classList.add('open');
+
+// toggleMenu.addEventListener('click', () => {
+//     sidebar.classList.toggle('open')
 // });
+
+// closeButton.addEventListener('click', () => {
+//     sidebar.classList.remove('open');
+// });
+
+
