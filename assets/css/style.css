@@ -692,6 +692,10 @@ video {
   margin-top: 18px;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1772,6 +1776,10 @@ button.accordion.is-open {
     margin-top: 64px;
   }
 
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .md\:w-4\/12 {
     width: 33.333333%;
   }
@@ -1865,6 +1873,10 @@ button.accordion.is-open {
 
   .lg\:ms-24 {
     margin-inline-start: 6rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:block {
