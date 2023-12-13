@@ -20,7 +20,6 @@ tabs.forEach(tab => {
 
 // Accordion JS 
 
-
 const accordionBtns = document.querySelectorAll(".accordion");
 
 accordionBtns.forEach((accordion) => {
